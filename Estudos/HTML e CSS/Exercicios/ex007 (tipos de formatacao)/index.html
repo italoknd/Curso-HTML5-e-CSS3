@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="web.ico" type="image/x-icon">
+    <title>Testando o negrito e itálico</title>
+    <style>
+        mark{
+            background-color: lime;
+        }
+        body{
+            background-color: royalblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais tipos de formatações</h1>
+    <h2>Negrito</h2>
+    <p>Nesta frase, há uma parte dela em <strong>negrito</strong>, que foi feita utilizando a tag STRONG.</p>
+
+    <h2>Itálico</h2>
+    <p>Nesta frase exite um termo em <em>itálico (ou em ênfase)</em> e ela foi feita utilizando a tag EM.</p>
+
+    <h2>Texto Marcado</h2>
+    <p>Podemos também adicionar <mark> textos com marcações</mark> utilizando a tag MARK</p>
+
+    <h3>Mas como mudar a cor amarela do marcador?</h3>
+    <p>Como origem, a cor amarela é escolhida como uma cor de marcação de texto, porém as vezes essa cor não combina muito com o site ou simplesmente você gostaria de trocar essa cor, e para tanto deve-se utilizar um pouco de <mark style = "background-color: lime">CSS</mark></p>
+
+    <h3>Como fazer:</h3>
+    <p>Basta digitar o parâmetro: <em>style = "background-color: (Digite uma cor)"</em>, <mark style="background-color: red;">dentro da tag "Mark"</mark> e escolher a cor desejada para o seu marcador.</p>
+
+    <h3>Ainda sobre o Mark:</h3>
+    <p>Quando temos muitas marcações de texto num site fica um pouco inviável sair colocando varias cores diferentes em cada marcação de uma por uma, e para tanto temos que adicionar um comando que faça isso para todos os marks (lembrando que isto só serve para os marks que você quer que seja de outra cor que não seja o amarelo).</p>
+
+    <p>Teremos que ir até o <mark>Head</mark> (cabeçalho) do nosso documento e adicionar a <mark>tag style</mark>, dentro dessa tag nos vamos adicionar um seletor para mark desse jeito: 
+    <br>
+    <br>  style
+    <br>
+    <br>  mark{
+    <br>  }
+    <br>
+    <br> /style
+    <br>
+    <br> E dentro desse seletor nos vamos colocar o parâmetro <em>"background-color"</em> e escolher uma cor para todos os seus marks.
+    </p>
+
+    <h2>Tag para textos "grandes" e "pequenos"</h2>
+    <p>A tag usada para <big><mark>textos grandes</mark></big>  é a tag "BIG", porém esta tag já é considerada obsoleta e logo, logo entrará em desuso, e a tag usada para <small><mark>textos pequenos</mark></small> é a tag "SMALL"</p>
+
+    <h2>Tag para textos excluídos e inseridos:</h2>
+    <p>A tag utilizada para <del>textos deletados</del> é a tag DEL. E para <ins>texto inserido</ins> é a tag INS.</p>
+
+    <h2>Tag para textos sobescritos e subscritos:</h2>
+    <p>Essas tags são muito importantes para a representação de algumas informações do tipo: 2 elevado ao cubo ou aquele 2 pequeno da fórmula da água, e para isso usamos:
+    <br>
+    <br>A tag SUP na situação do 2<sup>3</sup>, essa tag irá <mark>SOBESCREVER</mark> o 3 do expoente.
+    <br>
+    <br>A tag SUB na situação do H<sub>2</sub>O, essa tag irá <mark>SUBSCREVER</mark> o 2 da fórmula.
+    </p>
+    
+</body>
+</html>

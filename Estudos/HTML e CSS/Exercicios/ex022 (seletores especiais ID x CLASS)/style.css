@@ -1,0 +1,25 @@
+body{
+    background-image: linear-gradient(to right, #80ABC2, #4D6775);
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+}
+
+h1#principal{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.basico{
+    color: rgb(40, 40, 255);
+}
+
+.intermediario{
+    color: rgb(63, 0, 63);
+}
+
+.avancado{
+    color: rgb(179, 8, 8);
+}

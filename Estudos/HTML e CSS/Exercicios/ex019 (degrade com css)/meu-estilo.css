@@ -1,0 +1,7 @@
+* {
+ height: 100;
+} /* declaração de um seletor global, usa-se asteristico */
+
+body {
+  background-image: linear-gradient(to right, #3AD1DA, #7FDADF);
+}

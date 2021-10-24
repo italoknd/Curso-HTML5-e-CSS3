@@ -1,0 +1,20 @@
+Ao pesquisarmos alguma coisa na internet, as vezes demora pra
+carregar, você sabe por quê?
+
+Toda vez que pesquisamos algo na internet, é como se fossemos comprar
+algo, as vezes tem lugares mais perto do que outros, e é quaaase
+a mesma coisa com a internet.
+
+Ao buscarmos algo na internet, nos 
+temos varias rotas para poder seguir, mas as vezes, existem algumas 
+que estão congestionadas (apesar de serem o caminho mais proximo),
+então, tem de se fazer um desvio na rota, por isso as vezes demora
+pra carregar algo na internet, alguma rota pode estar congestionada,
+com problemas e etc, por isso precisa-se as vezes fazer desvios no
+meio do caminho.
+
+(Lembrando que: arquivos como imagens, são quebrados em vários
+pacotes e enviados muitas vezes por diversas rotas, que por sua vez,
+as vezes, podem ser ou não rápidas, e é por isso que as vezes quando
+queremos carregar uma imagem, algumas partes carregam mais rápidas
+que outras, interessante, né?)

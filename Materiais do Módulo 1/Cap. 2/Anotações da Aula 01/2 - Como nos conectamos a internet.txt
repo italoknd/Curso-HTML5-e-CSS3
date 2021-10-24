@@ -1,0 +1,17 @@
+Quando nos usuarios acessamos a internet, independente do dispositivo,
+seja ele, celular, pc, tablet. Nós somos os "Clientes", isso por quê
+nos estamos utilizando um serviço, que é a internet. 
+
+Mas... Como é feita essa conexão?
+Após a instalação do roteador na sua casa, no computador, ja
+existe um grande trabalho a ser feito, isso por que o MODEM
+tem a responsabilidade de MODULAR os sinais digitais de saída de um
+computador (ou seja, modular ondas quadradas, que é só o que os
+computadores entendem) para ondas analógicas (Sine Waves) para uma 
+linha telefônica de par trançado de cobre convencional.
+
+Depois ele DEMODULA o sinal analógico de entrada e o converte em um 
+sinal digital para o dispositivo.
+
+E para acessar os emaranhados arquivos, sites, enfim, o que o cliente
+desejar na internet nos precisamos acessar os servidores 

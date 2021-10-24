@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escondendo elementos com o Hover</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #510E8A;
+    color: rgb(230, 230, 230);
+    font-weight: 500;
+}
+
+div{
+    background-color: #090946;
+
+} /* selecionando a cor da div */
+
+div > p{
+    display: none;
+    
+}/* o filho desta div (paragrafo) não mostrará seu conteúdo. PS: o símbolo ">" diz que o primeiro elemento é pai do elemento na qual a seta está apontando */
+
+div:hover > p{
+    background-color: #13137c;
+    color: rgb(230, 230, 230);
+    font-weight: 500;
+    display: block; /* mostra o bloco */
+
+}/* Estes comando dizem que ao passar o mouse pela div, ele mostrará o conteúdo do seu filho, ou seja o "p" e o comando que faz isso é o "display: block;*/
+
+</style>
+<body>
+    <h1>Escondendo um elemento com o Hover</h1>
+    <p>Ao passar o mouse na palavra "Menu", logo abaixo, irá mostrar as opções disponíveis no mesmo.</p>
+    <div>
+        MENU:
+        <p>Cardápio <br>
+           Contato <br>
+           Sobre nós:
+        </p>
+    </div>
+    
+</body>
+</html>

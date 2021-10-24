@@ -1,0 +1,29 @@
+h1{
+  margin: auto;
+  margin-bottom: 30px;
+
+  background-color: lightgrey;
+  height: 200px;
+  width: 200px;
+
+  /*configs de borda*/
+  border-style: solid; /*Estilo da borda*/
+  border-width: 8px; /*Largura da borda*/
+  border-color: darkblue; /*Cor da borda*/
+}
+
+a{
+  text-decoration: none;
+
+  border-style: solid;
+  border-width: 8px;
+  border-color:blueviolet;
+
+  /*configs de padding (espaçamento)*/
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+
+  /*Uma observação sobre o padding, ele é dividido em 4 partes, espaçamento do topo, da direita, do rodapé e da esquerda, PORÉM essas quatro partes podem ser reduzidas a apenas uma, que seria o comando geral "padding" que adicionaria a mesma quantidade de pixels para todos os quatro cantos do elemento*/
+}

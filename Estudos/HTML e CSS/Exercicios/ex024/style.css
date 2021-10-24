@@ -1,0 +1,23 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(221, 252, 221);
+}
+
+a{
+    color: rgb(35, 35, 255);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: rgb(167, 167, 255);
+} /*ao passar o mouse no link, sublinhe o mesmo*/
+
+a:active{
+    color: rgb(121, 121, 121);
+}/*ao clicar no link a cor ativa vai ser cinza*/
+
+a::after{
+    content: ' [link]';
+    color: rgb(61, 61, 61);
+} /*pseudo-elementos, usam-se dois pontos duas vezes, diferentemente da pseudo-classe, que se usa dois pontos apenas uma vez*/

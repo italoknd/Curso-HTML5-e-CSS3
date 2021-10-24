@@ -1,0 +1,33 @@
+Representação de Dados:
+
+Os dados no computador são representados por vários "uns" e "zeros",
+o que nós conhecemos como "DIGITOS BINARIOS", ou simplismente "BITS".
+Ou seja, um bit apenas, é um "0" ou um "1".
+
+8 bits é o menor número capaz de representar algum tipo de dado,
+e para essa sequência de 8 bits, nos chamamos de BYTE.
+
+1 byte é menor número em uma escala de memória (digamos assim) 
+capaz de representar algum tipo de dado, ou seja, são 8 bits
+que formam algum tipo de dado.
+
+ENTÃO:
+A diferença entre BIT e BYTE, é que:
+BITS são sequencias de números binários, já os
+BYTES são grupos de bits que formam um tipo de dado. 
+
+Por exemplo:
+A sequencia de bits a seguir, representa a letra "A" do alfabeto:
+01000001.
+
+***UTF-8 (?)***
+
+MULTIPLOS DO BYTE:
+1024 bytes = 1KB
+
+***Lembrando que 8 bits é igual a 1 byte, logo,
+1024 bytes é igual a 1 kilo byte.***
+
+1024KB = 1MB
+1024MB = 1GB
+1024GB = 1TB

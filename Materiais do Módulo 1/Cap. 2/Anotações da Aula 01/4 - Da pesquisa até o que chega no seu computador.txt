@@ -1,0 +1,25 @@
+Suponhamos que queremos acessar o site do instagram, o que será que
+acontece desde o momento que clicamos pra fazer o search, até
+o momento que recebemos o resultado da busca?
+
+Ao digitarmos a nossa busca na internet (nesse caso, Instagram.com)
+primeiro a busca passa pelo servidor DNS que é como se fosse uma
+especie de "agenda eletrônica" que guarda números e nomes e que
+significa "Domain Name System", ou "Sistema de Nome de Domínio"
+
+Sistema de Nome de Domínio é um local na internet que possue
+servidores especiais.
+
+Então, ao pesquisarmos no navegador "Instagram.com",
+nos vamos ao servidor DNS, ele pesquisa na "agenda" o que nos
+queremos e nos envia o endereço correto do que precisamos
+
+(é como se o nosso computador dissesse a ele: "DNS, meu cliente 
+quer X coisa", daí o DNS vai lá e faz a busca e retorna com
+o endereço correto para nós).
+
+Tendo "em mãos" o endereço do site que desejamos, nos acessamos o 
+servidor desse site
+
+No instagram, por exemplo, nos temos varias imagens, essas imagens
+são quebradas em pequenos pacotes e enviadas ao cliente (usuario)

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos Externos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+</style>
+<body>
+    <h1>Estilos Externos:</h1>
+    <p>Agora vamos aprender um pouco sobre como funciona e como usamos os estilos externos do css, já que já aprendemos como usar estilos internos.
+        <br>
+        Primeiro de tudo devemos saber para que finalidade usamos os estilos externos e por quê eles são tão importantes. Bom, imagine que no seu site, você possui 30 páginas, e que nessas 30 páginas são seguidos um modelo padrão de estilo, logo, com o aprendizado obtido na parte estilos internos, sabemos que para cada página seria necessário setar todos os estilos das outras páginas para tudo ficar igual, ou até mesmo configurar o estilo apenas de uma página e depois copiar esse estilo e colar em todos os outros arquivos das outras páginas, mas acontece que essa prática é um pouco erronha.
+    </p>
+
+    <p>Para consertarmos isso, podemos criar um arquivo somente para as css, o nome do arquivo pode ser qualquer um, contanto que no final tenha o ".css", exemplo: "meu-estilo.css", após criar seu arquivo de css e setar todas as configurações de estilo desejadas, basta ir em cada arquivo das páginas do site e colocar em baixo do title a tag <mark>"link: css"</mark> ao abrir a tag link css, basta procurar o link do arquivo de css na parte do "href" da tag de css. Exemplo a seguir:
+        <br><br>
+        <img src="imagens/ex-link-css.png" alt="">
+    </p>
+
+    <h1>A regra charset:</h1>
+
+    <p>Uma coisa bastante importante também é quanto ao uso de acentuações em css externo, para que não haja erros em palavras com acentuação, usa-se a regra charset, e para habilitar as acentuações sem problemas no css externo é muito simples, basta digitar: <em>
+        <mark>@charset "UTF-8";</mark>
+    </em></p>
+
+    <img src="imagens/charset.png" alt="">
+
+    <p>OBS: Pode-se criar mais de um arquivo css para o seu site, para colocar em algumas páginas em especifico por exemplo.
+        <br><br>
+        OBS 2: É possível criar um style local em alguma página especifica, somente para fazer alguma configuração naquela página.
+        <br><br>
+        OBS 3: No mesmo arquivo é possível usar css interno, css externo e css inline! Legal né? &#x1F642;
+    </p>
+
+    <p><a href="pag02.html" target="_self" rel="next">Ir para a página 2</a></p>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="web.ico" type="image/x-icon">
+    <title>Trabalhando com links</title>
+</head>
+<style>
+    body{
+        background-color: rgb(47, 243, 106);
+    }
+    mark{
+        background-color: rgb(23, 105, 212);
+    }
+</style>
+<body>
+    <h1> Cap. 10 - Aprendendo o uso de links.</h1>
+    <h1>Usando links externos:</h1>
+    <h2>O que é um link externo?</h2>
+    <p>Link externo é um link que nos leva para outro site (que no caso, não será o nosso).
+        <br>
+        EX:<a href="https://www.youtube.com/channel/UCUN9lhwfMJRxMVuet7Shg0w" target="_blank" rel="external"> Clique aqui para acessar o Youtube</a>
+    </p>
+
+    <h2>E como eu posso fazer isso?</h2>
+    <p>Basicamente quando se quer usar links externos no nosso site, basta nós colocarmos um pequeno texto ou palavra, como o nome do site ou algo do tipo, e então é so envelopar essa palavra ou frase e adicionar a tag "a" (de âncora) e colocar dentro das aspas do campo de referência o seu link desejado, assim como no exemplo que foi mostrado acima.
+        <br><br>
+        <img src="ex.links.externos.png" alt="Exemplo na prática da utilização de links externos.">
+        <br><br>
+        <em>Exemplo na prática da utilização de links externos.</em>
+        <br><br>
+        É de SUMA importancia que sempre que você for utilizar links externos, você também utilize os parametros <mark>target="_blank"</mark> e <mark>rel="external"</mark> para que se quando clique no link, o navegador abra uma nova página para acessar o link, caso esses parametros não sejam usados, seu site vai ser sobreposto pelo seu link externo (e isso não é legal kkkkk).
+    </p>
+
+    <h1>Usando links internos:</h1>
+    <h2>O que é um link externo?</h2>
+    <p>Link interno é um link que redireciona o usuario para outra página dentro da nossa propria pagina.
+        <br><br>
+        EX: <a href="Pag002.html" target="_blank" 
+        rel="next">Clique aqui</a> para ser redirecionado para a segunda página do site
+    </p>
+
+    <h2>E como eu posso fazer isso?</h2>
+    <p>Para criar um link interno basta que você tenha criado uma outra página e que esta página esteja dentro da mesma pasta do seu documento que vai fazer a ligação, de modo em que as duas páginas apareçam na mesma pasta dentro do VSCode, como mostra a imagem abaixo:
+        <br><br>
+        <img src="editor.link.externo.png" alt="Exemplo mostrando como os sites devem ficar dentro do editor para que eles possam ser linkados entre si.">
+        <br><br>
+        E para criar esse link, também usa-se a tag "a", a única diferença é que na hora de colocar a referência (site), basta que você acione o comando CTRL + ESP e selecionar a página que você deseja linkar.
+    </p>
+
+    <h2>IMPORTANTE:</h2>
+    <p>Ao usar esse sistema de links internos é muito importante que você diferencie no link se você vai voltar uma página ou vai avançar uma página, e isso se faz quando você coloca o parametro "rel" dentro da tag "a" <mark>(NÃO SE ESQUEÇA DISSO!)</mark>.
+    <br><br>
+        Exemplo a seguir:
+        <br>
+        <img src="usando.o.rel.para.netx.ou.prev.page.png" alt="Exemplo do uso do rel dentro da tag <a>">
+        <br><br>
+        <em>O exemplo acima mostra uma das aplicações do parametro "rel", onde ele é usado para indicar ao navegador que o link em questão irá avançar uma página.</em>
+        <br><br>
+        E temos ainda mais um parametro que serve de especificação ao navegador que é o argumento <mark>"_self"</mark> dentro do parametro "target" que colocamos dentro da tag de links.
+        <br> 
+        O target = "_self" serve para indicar ao navegador que o link em questão, vai abrir na mesma aba do seu site, ou seja, ele não vai criar uma nova aba pra abrir o contéudo do link (até por que não fica legal abrir todos os links do seu site em novas abas, fica zoado e força o usuário a abrir muitas páginas no navegador, então a dica é: dose a quantidade de links que serão abertos em novas abas).
+        <br><br>
+        Segue o exemplo a seguir:
+        <br>
+        Acesse também a nossa <a href="Noticias/pag003.html" target="_self">página de notícias</a>
+        <br><br>
+        <img src="exemplo.do.uso.do.target.self.png" alt="">
+    </p>
+
+    <h1>Usando links para download:</h1>
+    <p>Vamos ver a seguir como se coloca link para download de um arquivo zipado, exemplo a seguir:
+        <br><br>
+        <ul>
+            <li><a href="Livro/10 - Ligações em toda parte.pdf">Acesse o PDF da aula 10.</a></li>
+            <li><a href="Livro/10 - Ligações em toda parte.zip" download="10 - Ligações em toda parte.zip" type="application.zip"> Baixar PDF da aula 10</a></li>
+            <br>
+        </ul>
+        <br>
+        Para baixar um arquivo basta usar o parametro <mark>download = "(nome do arquivo")</mark> e o parametro <mark>type = "(tipo de arquivo a ser baixado)"</mark> dentro da tag "a". Assim como mostra a imagem abaixo:
+        <br><br>
+        <img src="ex.link.para.download.png" alt="Exemplo de como se coloca um link para download na prática.">
+    </p>
+    
+</body>
+</html>

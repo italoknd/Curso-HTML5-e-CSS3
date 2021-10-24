@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+body{
+    background-image: linear-gradient(to right, #49868C, #A0D9D9);
+}
+
+main{
+    background-color: white;
+    border-radius: 15px; /*cria uma borda*/
+    box-shadow: 7.5px 7.5px 10px #356468a9;
+    width: 500px; /*largura de tela*/
+    padding: 15px; /*acolchoamento / borda*/
+    margin: auto /*centraliza todo o conteudo na tela*/
+}
+
+h1{
+    color: #A62D2D;
+    text-align: left;
+}
+
+h2{
+    color: #D9B166
+}
+
+p{
+    text-align: left;
+}
+
+
+
+
+
+/*OBS: Nunca usar ponto e virgula na chave de fechamento dos seletores, pq se usar vai dar bug e o seletor nao vai executar os comandos dele!!! */

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Bruce";
+  src: url("fonte_externa/batmfa__.ttf") format("truetype");
+}
+
+h1{
+    font-family: "Bruce";
+}
+
+h2{
+    font-family: "Bruce";
+}

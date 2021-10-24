@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML 5</title>
+</head>
+<style>
+    body{
+        background-color: rgb(247, 133, 92);
+    }
+</style>
+<body>
+    <h1>Compatibilidade de vídeos:</h1>
+    <p>Os padrões de vídeos mais utilizados e suportados em HTML 5 nos navegadores são os formatos:
+        <ul>
+            <li type="disc">M4V</li>
+            <li>MP4</li>
+            <li>Web M (Arquivo extremamente pequeno e com qualidade ruim)</li>
+            <li>OGV</li>
+        </ul>
+        O ideal é sempre ter vários vídeos com qualidades diferentes para usar no site, assim, caso um vídeo de alta qualidade não carregue, tem outros com qualidades menores. E para comprimir o tamanho dos vídeos existe uma excelente ferramenta para ajudar nesse trabalho (Ajuda bastante em casos onde o vídeo tem que ficar hospedado no proprio site).
+    </p>
+
+    <h1>Handbrake:</h1>
+    <p>O Handbrake é uma ferramenta utilizada para conversão de vídeos para que fiquem mais leves na hora de utilizar no seu site.</p>
+    
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Para adicionar um vídeo ao seu site, é muito simples, basta usar a tag "video", mas como é necessário colocar várias versões do mesmo vídeo com qualidade diferentes no site, a tag "video" terá que ser modificada assim como ocorreu na tag de áudio, ou seja, apagasse o "src" da tag video e adiciona-se varios sources src para colocar os vídeos individualmente.
+        <br>
+        EX:
+    </p>
+
+    <video width="560" controls poster="imagens/thumb-video.png">
+        <source src="midia/smoke.mp4.mp4" type="video/mp4">
+        <source src="midia/smoke.m4v.m4v" type="video/mp4">
+        <p>Infelizmente seu navegador não suporta este formato de vídeo.</p>
+    </video>
+    <br><br>
+    <img src="imagens/ex-tag-video.png" alt="Uso da tag video">
+    <br>
+    <h1>Alguns cuidados ao adicionar um vídeo ao seu site:</h1>
+    <p>Ao adicionar um vídeo ao seu site, as vezes ele vem com uma largura gigantesca onde é impossível de assistir ao vídeo, por isso adiciona-se o parametro <mark>"width"</mark> dentro da tag vídeo asssim como mostra na imagem acima para diminuir a largura da tela do vídeo, adiciona-se também o <mark>"controls"</mark> para o usuario poder ter controle do vídeo e por ultimo e não menos importante, o parametro <mark>"poster"</mark> que serve para você poder adicionar uma imagem ao vídeo que servirá como thumbnail.</p>
+
+    <h1>O problema da hospedagem local de vídeos...</h1>
+    <p>Ao hospedar localmente um vídeo no seu site isso pode causar um problema bem grande ao seu cliente ou até você mesmo (se o site for pra você) isso por quê dependendo do número de acessos que você tem no seu site os usuarios podem consumir muita banda por causa do vídeo, e isso reflete no bolso do seu cliente (ou no seu mesmo) na hora de pagar a hospedagem, isso por que vai ter que pagar mais caro devido aos vídeos estarem consumindo muito armazenamento. E para isso, precisamos aprender como <mark>incorporar vídeos externos</mark> para não termos mais problemas com alto consumo de banda no site.</p>
+
+    <h1>Inserindo vídeos do YouTube:</h1>
+    <p>Uma resolução bastante inteligente e recomendavel para esse problema é: Ao invés de hospedar vídeos direto no seu site, melhor enviar os vídeos do seu cliente para o YouTube e de lá você insere ele no seu site, assim, ao invés dele consumir banda do seu site, ele vai consumir do próprio YouTube. E para inserir um vídeo do YouTube no seu site basta ir no vídeo em questão e:
+        <ol>
+            <li>Clicar em compartilhar.</li>
+            <li>Clicar na opção "incorporar".</li>
+            <li>Clicar na opção "copiar".</li>
+            <li>Colar no código do seu site.</li>
+        </ol>
+        Bem simples, não é mesmo?
+    </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

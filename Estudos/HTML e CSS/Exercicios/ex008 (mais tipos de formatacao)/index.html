@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="web.ico" type="image/x-icon">
+    <title>Citações e Códigos</title>
+</head>
+
+<style>
+    body{
+        background-color: rgb(75, 209, 126);
+    }
+    mark{
+        background-color: rgb(33, 143, 233);
+    }
+</style>
+
+<body>
+    <h1>Outas formatações</h1>
+
+    <h2>1 - Código fonte / Pré-Formatação:</h2>
+
+    <p>O comando <code>"document.getElementById('teste')</code> é um comando de JavaScript. Para uma sequência de caracteres que deixam as letras muito coladas usa-se a tag "< code >"
+    </p>
+
+    <code>
+        int n=1, n2=1, res;
+
+        res = n1+n2;
+
+        if(res==2){
+            printf("\n Ola mundo");
+        }
+    </code>
+
+    <p> <mark style="background-color: rgb(33, 143, 233);">*A tag "< code >" não formata um txt como um código identado acima por exemplo, o txt entre as tags será exibido todo em uma linha horizontal. Para se corrigir isso, usa-se a tag "< pre >" cobrindo a tag <code> e o txt contido dentro dele (ex a seguir). </mark></p>
+
+    <pre>    
+        <code>
+            <strong>
+    int n=1, n2=1, res;
+
+    res = n1+n2;
+    
+    if(res==2){
+        printf("\n Ola mundo");
+    }
+            </strong> 
+        </code>
+    </pre>
+
+<p> <mark style="background-color: rgb(33, 143, 233);"> CORRIGINDO A TABULAÇÃO:</mark> Acima foi apresentado a correção da identação do código, para fazer isso basta selecionar a parte do txt que deseja consertar (sem as tags) a tabulação e executar o CMD: SHIFT + TAB. </p>
+
+    <h2>1.1 - Citações simples:</h2>
+
+    <p> Como diria o pai de um amigo meu: <q>O computador é um burro muito esperto</q> 
+    <br><br>
+    <mark style="background-color: rgb(33, 143, 233);">Para abreviar uma citação basta usar a tag "< q >" (quote) ou simplesmente fazendo isso manualmente mesmo.</mark></p>
+
+    <h2>1.2 - Citações completas: </h2>
+
+    <p>Segundo o Prof. Guanabara no seu curso de HTML5 e CSS3:</p>
+        <br>
+    <blockquote>
+        <q>É melhor usar a tag < q > do que simplesmente digitar aspas no texto que é uma citação</q>
+    </blockquote>
+    <br>
+    <p><mark style="background-color: rgb(33, 143, 233);"> CMD usado em citação completa: Tag "< blockquote >"</mark>. ela basicamente desloca o texto mais para a direita. </p>
+
+    <h2>1.3 - Abreviações:</h2>
+
+    <p>É possivel também mostrar o significado de uma sigla para o visitante do site. Como no exemplo abaixo. As palavras "Html" e "Css" estão abreviadas e nisso ao passar o cursor por cima das siglas o navegador mostra o significado delas. (Faça o teste)
+    <br><br>
+    <mark style="background-color: rgb(33, 143, 233);">E para fazer isso</mark>, você deve envelopar a sigla em questão e usar a tag "abbr" e escrever dentro do campo "title" o significado da sigla em questão.</p>
+
+    <p><mark style="background-color: rgb(230, 36, 36);">I'm studying <abbr title="HyperText Markup Language"> <ins>HTML</ins></abbr> and <abbr title="Cascating Style Sheets"><ins>CSS</ins></abbr>. And i'm enjoying it.</mark></p>
+
+<p> <mark style="background-color: rgb(33, 143, 233);">Fonte Monoespaçada:</mark> Serve para espaçar alguma palavra ou frase que é dificil de entender sem o essa fonte justamente pq as letras ficam sem espaçamento, ou seja, muito coladas.
+
+<mark style="background-color: rgb(33, 143, 233);">CMD: CTRL + SHIFIT + P >>> Wrap with abreviation (envelopamento) >>> (digitar a tag) Code </mark> </p>
+
+</body>
+</html>

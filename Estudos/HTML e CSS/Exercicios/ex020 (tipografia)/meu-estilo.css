@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+body{
+    background-image: linear-gradient(to right, #F2CC0C, #D9A407);
+}
+
+main{
+    background-color: white;
+    border-radius: 15px; /*cria uma borda*/
+    box-shadow: 7.5px 7.5px 10px #BF7E04;
+    width: 500px; /*largura de tela*/
+    padding: 15px; /*acolchoamento / borda*/
+    margin: auto /*centraliza todo o conteudo na tela*/
+}
+
+h1{
+    color: #A63F03;
+}
+
+h2{
+    color: #BF7E04;
+}
+
+h3{
+    color: #BF7E04;
+}

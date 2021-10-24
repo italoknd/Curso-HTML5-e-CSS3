@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML 5</title>
+</head>
+<style>
+    body{
+        background-color: rgb(175, 175, 175);
+    }
+    mark{
+        background-color: rgb(0, 81, 255);
+    }
+</style>
+<body>
+    <h1>Capítulo 11: Imagens dinâmicas, áudios e vídeos</h1>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-com-tamanho-p-cllr-300.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-de-tamanho-m-p-tablets-700.png" type="image/png">
+        <img src="imagens/foto-com-tamanho-g-computador-1000.png" alt="Imagem flexivel">
+    </picture>
+
+    <h2>Explicando o comando:</h2>
+    <p>Primeiro de tudo, as imagens dinâmicas são criadas para melhor se adaptarem em diferentes telas, isto é, se uma determinada imagem "x" for carregada em vários dispositivos como: tablet, celular, computador elas teram seus devidos tamanhos de acordo com a tela em que o usuário está visualizando o site. E para tal feito, usamos a tag "picture", dentro dela, colocamos a imagem desejada usando a tag "img". importante ressaltar que, na tag "img", deve ser upada ou a menor, ou a maior foto desejada (no exemplo a ser mostrado, foi upada a maior foto). Depois de fazer o upload da imagem na tag img, é necessário adicionar outra tag chamada "source media type", dentro das configurações de largura (width), é aconselhavel trocar o "min-width" (largura minima) por "max-width" (largura máxima). Após isso, coloca-se o valor máximo de pixels que pega a foto upada e em "img" e coloca-se no argumento "max-width" e depois, na parte de "srcset" coloca-se a imagem que tem menos pixels do que o que foi setado no "max-width" (Ou seja, coloca-se o arquivo de imagem que é menor que a imagem anterior).    
+    </p>
+    
+    <h3>Criando vários sources:</h3>
+    <p>Como podemos ter inumeras variações de tamanho de imagem no nosso site, é necessário criar vários "source media type" e com isso, é necessário passar uma importante informação, a partir da foto carregada na nossa tag img, se ela for a maior foto disponivel, consequentemente as seguintes iram ter que diminuir, nisso, todos os sources criados em cima da tag img, teram que ir diminuindo a imagem para não ocorrer erros. Caso a foto upada na tag img for a menor, os sources a serem criados acima da tag img teram que ir aumentando a imagem gradativamente. Segue o exemplo:
+        <br><br>
+        <img src="exemplos em fotos/usando-a-tag-picture.png" alt="Exemplo na prática usando a tag picture">
+        <br><br>
+        <em>No exemplo acima, a foto upada na tag "img" é a maior, e a cada "source media type" colocado acima da tag "img" a foto vai diminuindo para se adaptar ao tamanho de tela do usuario.</em>
+        <br><br>
+        É importante lembrar também que tem que colocar o tipo de imagem no campo "type" do "source media type" (Neste caso o tipo de imagem é PNG, como está mostrando o exemplo acima). Outra coisa que é válido avisar é que: Quando for setar um valor no "max-width", é sempre bom adicionar 50 pixels a este valor para evitar que o site crie uma barra de rolagem horizontal (o que faz com que o site fique feio).
+    </p>
+    
+    <h1>Reproduzindo audios</h1>
+    <p>Agora vamos aprender a como reproduzir um audio em HMTL5.
+        <br>
+        Existem duas maneiras de se colocar um áudio em HTML, o primeiro deles é usando a tag "audio", como mostra o exemplo abaixo.
+        <br><br>
+        <img src="exemplos em fotos/ex-uso-da-tag-audio.png" alt="Exemplo mostrando o uso da tag audio.">
+        <br><br>
+        <audio src="midia/guanacast-33.mp3" controls></audio>
+    </p>
+    
+
+    <h2>Explicando as funcionalidades da tag:</h2>
+    <p>A tag audio leva consigo três parametros, que são o "controls", que permite você controlar o volume do áudio bem como pausa-lo e dar play. E o "autoplay", que na teoria, era pra tocar o áudio automaticamente. Porém durante os testes desse parametro, ele não funcionou no navegador. E por causa disso, meio que essa tag deixa a gente um pouco na mão, e por isso, vamos ver a segunda maneira de se colocar um áudio em HTML 5. É preciso lembrar ainda que <mark>os navegadores suportam apenas arquivos MP3, WAV e OGG</mark>.</p>
+
+    <h2>Um outro jeito de upar áudio</h2>
+    <p>Uma outra maneira de se colocar um áudio usando HTML é ainda usando a tag "audio" mas com algumas modificações... Ao criar a tag, apaga-se o parametro "src" e ENTRE o inicio e o fim da tag, adiciona-se o "Source src", como indica a imagem abaixo:
+        <br><br>
+        <img src="exemplos em fotos/ex-segundo-uso-da-tag-audio.png" alt="">
+        <br><br>
+        Agora você adiciona o arquivo normalmente pelo source e no "type", você digita: "audio/(tipo de áudio que é o seu arquivo, mpeg, wav ou ogg)". Existem ainda outros parametros importantes de serem listados:
+        <ul>
+            <li>Preload: Ao ativar esse parametro, ele lhe dá algumas opções como:</li>
+            <ol type="1">
+                <li>AUTO: ao usar esse comando no parametro "preload" ele reproduz seu áudio automaticamente após carregar todo o contéudo do site (essa função não é muito indicada caso o áudio for muito grande,  tendo em vista que o áudio também faz parte do contéudo do site).</li>
+                <br>
+                <li>METADATA: Mostra informações sobre o arquivo tais como tempo de duração.</li>
+                <br>
+                <li>NONE: Esse não carrega nada do áudio, ou seja, neste caso o arquivo so irá carregar quando o usuário apertar o play.</li>
+            </ol>
+                <br>
+            <li>Loop: Como seu nome já denuncia, ele deixa o áudio em looping toda vez que o mesmo termina.</li>
+                <br>
+        </ul>
+    </p>
+
+    <audio preload="auto" controls loop>
+        <source src="midia/Kenny Loggins - Footloose.mp3" type="audio/mpeg">
+        <p>Infelizmente não foi possível carregar o áudio, mas você pode baixar <a href="midia/Kenny Loggins - Footloose.mp3">clicando aqui</a></p>
+    </audio>
+
+    <h2>Mas e se eu não conseguir ouvir o áudio?</h2>
+    <p>É possível que nem todos os navegadores reproduzam os áudios mp3, wav ou ogg, por alguns não tem compartibilidade com esses tipos de áudio, e para tanto existe uma solução que é dar a opção de download desse áudio para o usuário. Como mostra a imagem abaixo:
+        <br><br>
+        <img src="exemplos em fotos/resolucao-alt-para-erro-de-reprod-do-audio.png" alt="">
+        <br><br>
+        OBS: <em><mark>A mensagem só irá realmente aparecer SE o navegador não tiver compartibilidade com o tipo de áudio que você está disponibilizando no site.</mark></em>
+        <br><br>
+        OBS 2: Evitar usar arquivos Wav, ja que eles são extremamente pesados.
+    </p>
+</body>
+</html>

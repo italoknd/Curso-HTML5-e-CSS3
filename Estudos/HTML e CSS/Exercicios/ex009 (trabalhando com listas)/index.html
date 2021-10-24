@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="web.ico" type="image/x-icon">
+    <title>Listas OL e UL</title>
+</head>
+<style>
+    body{
+        background-color: rgb(32, 107, 192);
+        letter-spacing: 0.1ch;
+    }
+    
+    mark{
+        background-color: rgb(91, 187, 91);
+    }
+    
+</style>
+<body>
+
+    <h1>Trabalhando com listas</h1>
+
+    <h2>Listas Ordenadas (OL)</h2>
+
+    <h3>O que são?</h3> 
+    <p>Listas ordenadas (OL) são listas em que a ordem faz diferença. São otimas para se otimizar tempo quando se trabalha com listas nas quais há muitos itens e numerações. <mark style="background-color:orange;">E para utiliza-las basta usar a TAG < ol ></mark>. <mark style="background-color: rgb(91, 187, 91);"> Cada item da lista é declarado pela TAG < li > que fica dentro da TAG "OL" </mark>. Segue o exemplo abaixo:</p>
+    <ol>
+        <li>Acordar</li>
+        <li>Levantar da cama</li>
+        <li>Escovar os dentes</li>
+        <li>Tomar café</li>
+    </ol>
+
+    <p>A numeração é organizada automaticamente, não precisando assim ser consertada caso haja erro na enumeraação da lista. <br><br> <mark style="background-color: orange;">OBSERVAÇÃO:</mark> A partir do HTML 5 a utilização do /li tornou-se opcional, ou seja, isso significa que caso você queira apagar essa parte da tag do seu código agora você pode fazer isso sem se preocupar com erros.
+    </p>
+
+    <p>Podemos ainda organizar o tipo da numeração que queremos mostrar na nossa lista e escolher um número que queremos que comece contando na lista.
+
+    <br><br> 
+    <mark style="background-color: rgb(91, 187, 91);">Para escolher o tipo da numeração</mark> basta digitar a palavra "type" dentro da TAG < ol >. Ao fazer isso você terá uma série de opções para o tipo da numeração da sua lista. E <mark style="background-color: rgb(91, 187, 91);">para escolher um número para qual você quer que a lista comece a contar</mark> basta digitar "start" dentro da TAG < ol >, exemplo:
+
+    <br><br>
+    <ol type="I" start="5">
+        <li>Acordar</li>
+        <li>Levantar da cama</li>
+        <li>Escovar os dentes</li>
+        <li>Tomar café</li>
+    </ol>
+    <br><img src="Tag_OL_Ex.png" alt="Código mostrando como foi feito a troca e o tipo da numeração">
+
+    <br><br>
+    <em>No exemplo acima o tipo da numeração mudou para algarismo romano e começou a contar a partir do número 5.</em>
+    </p>
+
+    <h2>Listas não ordenadas(UN)</h2>
+
+    <p>Neste tipo de lista não precisamos necessariamente enumerar uma sequencia de afazeres. <mark style="background-color: rgb(91, 187, 91);"> E para criar uma lista nao ordenada</mark> (ou, unordered list) <mark style="background-color: rgb(91, 187, 91);">basta usar a TAG < ul ></mark>.</p>
+
+    <ul>
+        <li>comprar pão</li>
+        <li>comer pão</li>
+        <li>tomar café</li>
+        <li>arrumar a casa</li>
+    </ul>
+
+    <p>Podemos também personalizar as listas nao ordenadas inserindo o "type" dentro da TAG < ul >. Segue o exemplo:</p>
+
+    <ul type="square"> <!-- Tipos de personalização: disc, circle, square-->
+        <li>comprar pão</li>
+        <li>comer pão</li>
+        <li>tomar café</li>
+        <li>arrumar a casa</li>
+    </ul>
+
+    <img src="Ex_Lista_Nao_Organizada.png" alt="Exemplo de lista nao organizada">
+
+    <p><em>No exemplo acima foi alterada a personalização da lista não ordenada.</em> </p>
+
+    <h2>Atividades a se fazer:</h2>
+    <p>Agora vamos ver como se faz uma lista dentro de outra lista.</p>
+
+    <ol> <!--Inicio da lista geral-->
+        <li>Limpar a casa</li>
+        <ol type="A">
+            <li>Varrer a casa</li>
+            <li>Passar pano na casa</li>
+            <li>Lavar louça</li>
+        </ol>
+        
+        <br>
+        
+        <li>Limpar o quintal</li>
+        <ol type="A" start="4"> <!--O start="4" neste caso serve para que a segunda lista incie sua contagem a partir da quarta letra do alfabeto-->
+            <li>Varrer o quintal</li>
+            <li>Lavar o quintal</li>
+        </ol>
+    </ol><!--Fim da lista geral-->
+    <img src="ex_lista_dentro_de_lista.png" alt="Exemplo na prática de como se coloca uma lista dentro de outra lista">
+    <p>Agora vamos misturar as listas UL com listas OL.</p>
+    <h2>Meus jogos e videogames favoritos:</h2>
+    <ol>
+        <li>PlayStation 2:</li>
+        <ol>
+            <li>Resident Evil:</li>
+            <ul type="disc">
+                <li>Resident Evil 4</li>
+                <li>Resident Evil 1</li>
+                <li>Resident Evil 7</li>
+            </ul>
+            <li>Bomba Patch</li>
+            <li>Black</li>
+        </ol>
+        
+        <br>
+
+        <li>Master System:</li>
+        <ul type="disc">
+            <li>Sonic: The Hedgehog</li>
+            <li>Shinobi</li>
+            <li>Cyber Shinobi</li>
+        </ul>
+    </ol>
+
+    <h2>Lista de definições:</h2>
+    <p>A lista de definição pode ser acionada pela tag "< dl >". Esta tag é muito utilizada para descrever algo, como se fosse um dicionario. Existe ainda outras duas tags que acompanha a tag "< dl >", que são:
+    <br>Tag < dt >: <em>"Defintion term"</em>, esta tag é onde fica guardado o termo definição.
+    <br>Tag < dd >: <em>"Defintion description"</em>, esta tag é onde fica guardada a definição do termo em questão.
+    <br><br>
+
+    Exemplo:
+    <br>
+    <dt>HTML:</dt>
+    <dd>Linguagem de marcação de texto para criação de sites.</dd>
+    <br>
+    <img src="ex_dt_dd_dl.png" alt="">
+    <br>
+    <em>A imagem acima mostra na prática como ficou o exemplo sobre lista de definição.</em>
+    </p>
+    
+
+
+</body>
+</html>

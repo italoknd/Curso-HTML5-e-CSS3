@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="meu-estilo.css">
+    <title>Fontes com o Google Fonts</title>
+</head>
+<body>
+    <h1>1.0 - Trabalhando com fontes do Google Fonts.</h1>
+    <p>Sabemos que ao usar fontes pré embutidas do vscode ficamos um pouco limitados, já que não temos tantas variedades de fontes assim, então, para resolver esse problema, nós podemos usar o <a href="https://fonts.google.com/" rel="next" target="_blank">Google Fonts</a>, lá você vai encontrar uma variedade de fontes para usar no seu site.</p>
+
+    <h2>1.1 - Escolhendo uma fonte.</h2>
+    <p>Ao entrar no <a href="https://fonts.google.com/" rel="next" target="_blank">Google Fonts</a> você encontrará várias opções de fontes para usar no seu site, e após você encontrar sua fonte desejada, vamos lhe mostrar em como obter ela. Primeiramente você vai em "Select This Style"</p>
+    <img src="imagens/select-this-style.png" alt="" width="100%" >
+
+    <p>Ao selecionar esta opção, basta ir no "embed", logo em seguida esolher a opção "@import" e copiar tudo o que está entre a tag "style" e colar dentro do VSCode</p>
+    <img src="imagens/importando-fonte.png" alt="" >
+
+    <h2>1.2 - Aplicando a fonte ao seu código HTML</h2>
+    <p>Após fazer sua escolha de fonte para seu site e importar ela pra dentro do VSCode chegou a hora de aplicar ela dentro do seu codigo HTML, o que é muito simples, basta você escolher a tag do site na qual você deseja adicionar a fonte e adicionar o comando "Font-Family", após isso basta digitar o nome da fonte (É sempre bom lembrar que o nome da fonte deve estar entre parenteses ;) ).</p>
+
+    <p>ATENÇÃO: É necessário salientar que todas as importações de fontes DEVEM estar logo nas primeiras linhas da sua configuração de estilo seja ela externo ou interno. E uma outra importante dica é: Não abuse das fontes, o recomendado é que se use entre 3 a 4 fontes no seu site para que não acabe deixando tudo muito bagunçado.</p>
+
+    <h1>2.0 - Trabalhando com fontes externas.</h1>
+    <p>O <a href="https://fonts.google.com/" rel="next" target="_blank">Google Fonts</a> é uma ótima opção para quem está atrás de fontes para usar em seu site, mas saiba que é possível ainda usar outras fontes externas, ou seja, de outros sites como por exemplo o <a href="https://www.dafont.com/pt/" rel="next" target="_blank"> DaFont</a>. Pegando como base, o site DaFont, você pode escolher uma fonte desejada e baixa-la normalmente após isso basta extrair seu arquivo para ele gerar os <a href="https://www.oficinadanet.com.br/tecnologia/25889-quais-as-diferencas-entre-fontes-otf-e-ttf">arquivos OTF (OpenType) e TTF (TrueType)</a> (OBS: Nem todas as fontes possuem esses dois arquivos, as vezes um pode possuir um formato e o outro não) após isso, basta copiar esses arquivos e colar dentro da pasta na qual você está criando o site.</p>
+
+    <h2>2.1 - Configurando a fonte dentro do VSCode</h2>
+    <p>Após copiar os arquivos OTF e TTF para dentro da pasta do seus site vamos agora criar o nosso seletor dentro da área voltada a configurações de estilos externos, o seletor para fontes externas se chama <strong>Font Face</strong>.</p>
+    <img src="imagens/font-face.png" alt="">
+
+    <p>Dentro desse seletor você coloca o nome do arquivo no campo de url (De preferencia copie o nome do arquivo e cole na url para que não haja problemas):
+        <br><br>
+    <img src="imagens/url-font-face.png " alt="">
+        <br>
+    <em>foi usada uma fonte do Batman Forever como exemplo heheh</em>
+        <br><br>
+    Além disso, é necessário adicionar uma configuração chamada "format" ao lado da url e antes do ponto e vírgula, onde você vai informar o tipo de formato da sua fonte entre aspas:
+        <br><br>
+        <img src="imagens/forma-font-face.png" alt="">
+        <br><br>
+        Caso você queira adicionar mais uma fonte externa ao seu site, basta colocar uma virgula e adicionar novamente o comando url
+        <br><br>
+        <img src="imagens/adicionando-outras-fontes.png" alt="">
+    </p>
+
+    <h3>2.1.1 - Tipos de format():</h3>
+    <p>Existem alguns tipos de formatos de fontes que é bom conhecer para não ficar perdido na hora de informa-los no campo format(), que são:
+        <ol>
+            <li>opentype</li>
+            <li>truetype</li>
+            <li>embedded-opentype</li>
+            <li>truetype-aat (aat = Apple Advanced Typography)</li>
+            <li>svg</li>
+        </ol>
+    </p>
+
+    <h2>2.2 - Font-family para fontes externas</h2>
+    <p>Existe um campo que ficou vazio até agora nas imagens de exemplos e esse campo é o font-family, que na verdade, para fontes externas você que vai criar um nome para a sua font-family, como foi usada uma fonte do batman como exemplo, usaremos o nome "Bruce" como nome hehe. Uma outra coisa que vale ressaltar é que: Geralmente costuma-se colocar os arquivos das fontes dentro de uma pasta separada só para elas dentro do seu projeto, nisso, você não vai conseguir usar a fonte no seu projeto até que você insira o diretório dela corretamente, exemplo, foi criada aqui uma pasta chamada "fonte_externa" e dentro dela esta o arquivo da fonte, então nesse caso o caminho para o acesso do arquivo ficou "fonte_externa/batmfa__.ttf", confira:</p>
+    <img src="imagens/diretorio-das-fontes.png" alt="">
+
+    <p><a href="font2.html" rel="next" target="_blank">Acesse aqui o site que utilizou fonte do batman</a></p>
+    
+</body>
+</html>
