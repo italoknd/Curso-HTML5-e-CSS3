@@ -1,0 +1,12 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+  background-size: 200px 200px; /*configurando o tamanho da imagem*/
+  background-repeat: no-repeat; /*config de repetição de imagem*/
+  background-position-y: 40px;  /*posição da imagem no eixo y*/
+}
