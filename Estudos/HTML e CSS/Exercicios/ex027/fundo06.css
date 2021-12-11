@@ -1,18 +1,31 @@
-body{
+body {
   background-color: black;
   background-image: url('imgs/wallpaper002.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-attachment: fixed;/*deixa a imagem fixa no site, ou seja, ela nao acompanhará a rolagem
+  background-attachment: fixed; /*deixa a imagem fixa no site, ou seja, ela nao acompanhará a rolagem
   de conteúdo do site*/
+
+
   height: 100vh;
+
+  
+  /*
+  Short-hand - Background (ordem do shorthand)
+  color > image > position > repeat > [size] > attachment
+  
+  OBS: O background-repeat ainda nao funciona no shorthand até a data de publicação deste material (8/12/2021), então o aconselhavel é usar o shorthand na mesma ordem, porém tirando o bg size e adicionando ele separadamente se for o caso.
+  (exemplo na linha seguinte)
+  */
+  background: black url("imgs/wallpaper002.jpg") center center no-repeat fixed;
+  background-size: cover;
 }
 
-main{
+main {
   background-color: white;
   padding: 10px;
   margin: auto;
   border: 1.5px solid darkblue;
-  width: 400px;
+  max-width: 600px;
 }
