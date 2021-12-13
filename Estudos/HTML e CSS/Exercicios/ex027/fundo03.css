@@ -6,12 +6,19 @@
   margin: 5px;
 }
 
+.img{
+  background-image: url(imgs/wallpaper003.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+}
+
 #q1{
   background-position: left top; /*PADRÃO*/
 }
 
 #q2{
-  background-position: left center;
+  background-position: left bottom;
 }
 
 #q3{
