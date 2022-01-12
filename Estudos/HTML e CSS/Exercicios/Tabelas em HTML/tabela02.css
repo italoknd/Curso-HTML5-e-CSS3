@@ -1,0 +1,13 @@
+table{
+  border-collapse: collapse;
+}
+
+thead{
+  background-color: gray;
+}
+
+td{
+  border: 1px solid black;
+  height: 50px;
+  text-align: center;
+}
