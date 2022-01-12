@@ -1,5 +1,6 @@
 body{
   background-color: rgb(48, 12, 12);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1{
@@ -11,15 +12,20 @@ table{
   background-color: white;
 }
 
-thead{
-  background-color: rgb(155, 153, 153);
+thead, tfoot{
+  background-color: rgb(109, 109, 109);
+  color: white;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-td{
+td, th{
   border: 1px solid black;
-  height: 50px;
+  height: 40px;
   width: 150px;
   text-align: center;
+}
+
+.populacao{
+  text-align: right;
 }
