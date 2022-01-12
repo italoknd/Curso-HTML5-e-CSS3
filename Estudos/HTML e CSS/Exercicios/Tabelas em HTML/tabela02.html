@@ -13,6 +13,7 @@
   ANATOMIA DE TABELAS GRANDES
 
   TABLE
+    CAPTION (LEGENDA/TÍTULO DA TABELA)
     THead
       TR, TD, TH
 
@@ -24,13 +25,14 @@
   -->
 
   <table>
+    <caption>População do Brasil</caption>
     <thead>
       <tr>
-        <th>Posição</th>
-        <th>Unidade federativa</th>
-        <th>População</th>
-        <th>% da pop. total</th>
-        <th>Quantidade de habitantes</th>
+        <th scope="col">Posição</th>
+        <th scope="col">Unidade federativa</th>
+        <th scope="col">População</th>
+        <th scope="col">% da pop. total</th>
+        <th scope="col">Quantidade de habitantes</th>
       </tr>
     </thead>
     <tbody>
@@ -65,7 +67,7 @@
     </tbody>
     <tfoot>
       <tr>
-        <td>Total População</td>
+        <td scope="row">Total População</td>
         <td>9999999</td>
       </tr>
     </tfoot>
