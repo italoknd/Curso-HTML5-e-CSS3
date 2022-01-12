@@ -1,13 +1,25 @@
+body{
+  background-color: rgb(48, 12, 12);
+}
+
+h1{
+  color: white;
+}
+
 table{
   border-collapse: collapse;
+  background-color: white;
 }
 
 thead{
-  background-color: gray;
+  background-color: rgb(155, 153, 153);
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 td{
   border: 1px solid black;
   height: 50px;
+  width: 150px;
   text-align: center;
 }
