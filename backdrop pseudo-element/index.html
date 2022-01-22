@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Backdrop</title>
+</head>
+<body>
+  <div class="container">
+    <h1>::backdrop</h1>
+    <div id="content-container">
+      <p>The ::backdrop CSS pseudo-element is a box the size of the viewport which is rendered immediately beneath any element being presented in full-screen mode. This includes both elements which have been placed in full-screen mode using the Fullscreen API and &lt;dialog&gt; elements.</p>
+        <button class="button" onclick="openDialog();">Click here</button>
+    </div>
+    
+    <dialog>
+      <h2>Open dialog window Title</h2>
+      <p>Can u see the backdrop?</p>
+      <button class="button" onclick="closeDialog();">Close</button>
+    </dialog>
+  </div>
+
+  <script src="js/backdrop.js"></script>
+</body>
+</html>

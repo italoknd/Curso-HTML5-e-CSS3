@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(168, 168, 168);
+    background-color: hsl(0, 0, 98%);
 }
 
 div{
@@ -26,4 +26,25 @@ div:hover{
 
 #div3:hover{
     background-color: rgb(187, 19, 19);
+}
+
+a{
+    display: block;
+    margin: 50px;
+    text-decoration: none;
+    color: white;
+    background-color: hsl(200, 90%, 50%);
+    width: 12vw;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+a::before{
+    content: '⇒ ';
+    color: hsl(0, 0%, 88%);
+}
+
+a::after{
+    content: ' ⇐';
+    color: hsl(0, 0%, 88%);
 }

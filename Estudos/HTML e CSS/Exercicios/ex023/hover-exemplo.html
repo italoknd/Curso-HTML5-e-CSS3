@@ -18,21 +18,30 @@ body{
 
 div{
     background-color: #090946;
-
+    width: 20vw;
+    text-indent: 5px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
 } /* selecionando a cor da div */
 
-div > p{
+div > ul{
     display: none;
-    
+    text-indent: 5px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    transition: .5s;
 }/* o filho desta div (paragrafo) não mostrará seu conteúdo. PS: o símbolo ">" diz que o primeiro elemento é pai do elemento na qual a seta está apontando */
 
-div:hover > p{
+div:hover > ul{
     background-color: hsl(0, 0%, 0%);
     color: rgb(230, 230, 230);
     font-weight: 500;
     display: block; /* mostra o bloco */
-
 }/* Estes comando dizem que ao passar o mouse pela div, ele mostrará o conteúdo do seu filho, ou seja o "p" e o comando que faz isso é o "display: block;*/
+
+li{
+    list-style-type: none;
+}
 
 button:disabled{
     background-color: hsl(220, 80%, 50%);
@@ -50,11 +59,12 @@ button:enabled{
     <h1>Escondendo um elemento com o Hover</h1>
     <p>Ao passar o mouse na palavra "Menu", logo abaixo, irá mostrar as opções disponíveis no mesmo.</p>
     <div>
-        MENU:
-        <p>Cardápio <br>
-           Contato <br>
-           Sobre nós:
-        </p>
+        <p>MENU:</p>
+        <ul>
+            <li>Cardapio:</li>
+            <li>Contato:</li>
+            <li>Sobre:</li>
+        </ul>
     </div>
 
     <button type="submit" enabled>Enviar</button>
