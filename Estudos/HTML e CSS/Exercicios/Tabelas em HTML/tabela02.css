@@ -3,13 +3,14 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1{
+h1, p{
   color: white;
 }
 
 table{
   border-collapse: collapse;
   background-color: white;
+  position: relative;
 }
 
 table caption{
@@ -25,6 +26,12 @@ thead, tfoot{
   color: white;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+thead > tr > th{
+  position: sticky;
+  top: -1px;
+  background-color: rgb(109, 109, 109);
 }
 
 td, th{
