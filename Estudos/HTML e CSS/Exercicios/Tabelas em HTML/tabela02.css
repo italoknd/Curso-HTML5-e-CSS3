@@ -37,3 +37,12 @@ td, th{
 .populacao{
   text-align: right;
 }
+
+/*efeito zebrado na tabela*/
+tbody > tr:nth-child(even){
+  background-color: lightgray;
+}
+
+tbody > tr:nth-child(odd){
+  background-color: aliceblue;
+}
