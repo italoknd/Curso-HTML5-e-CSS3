@@ -1,0 +1,47 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #715c91;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 20vh 70vh 10vh; /*terá 3 linhas, e essas linhas estão dividas nessas proporções*/
+  grid-template-areas:
+    'header header'
+    'main aside'
+    'footer footer';
+}
+
+header {
+  background-color: yellow;
+  grid-area: header;
+
+  /* grid-column-start: 1; indica a linha imaginaria virtual de ínicio */
+  /* grid-column-end: 3; indica a linha imaginaria virtual de fim */
+}
+
+main {
+  background-color: blue;
+  grid-area: main;
+
+  /* grid-column: 1/3; indica a linha imaginaria virtual de ínicio e fim */
+}
+
+aside {
+  background-color: green;
+  grid-area: aside;
+
+  /* grid-column: 1/3; indica a linha imaginaria virtual de ínicio e fim */
+}
+
+footer {
+  background-color: orange;
+  height: 100px;
+  grid-area: footer;
+
+  /* grid-column: 1/3; indica a linha imaginaria virtual de ínicio e fim */
+}
