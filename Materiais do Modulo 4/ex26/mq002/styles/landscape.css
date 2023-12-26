@@ -1,1 +1,6 @@
 /*Aparelho em modo landscape (deitado)*/
+
+body {
+  background-image: url('../assets/cev-landscape.jpg');
+  background-position: left bottom;
+}

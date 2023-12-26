@@ -1,1 +1,4 @@
 /*aparelho em modo retrato (portrait)*/
+body {
+  background-image: url('../assets/cev-portrait.jpg');
+}
